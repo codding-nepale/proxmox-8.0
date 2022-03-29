@@ -1,3 +1,4 @@
+clear
 echo "deb [arch=amd64] http://download.proxmox.com/debian/pve bullseye pve-no-subscription" > /etc/apt/sources.list.d/pve-install-repo.list
 wget https://enterprise.proxmox.com/debian/proxmox-release-bullseye.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg 
 sha512sum /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg 
@@ -14,3 +15,15 @@ y
 y
 n
 0
+clear
+read -p "- Do you want to install the Dark theme?[Y/N]" -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+      echo "installation of the theme in progress..."
+      bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
+      echo "install theme end with success"
+      clear
+      echo "installation of the latest packages in progress"
+      
+ else if [[ $REPLY =~ ^[Nn]$ ]]; then
+            echo "installation of the latest packages in progress"
+fi
