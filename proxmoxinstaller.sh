@@ -5,16 +5,6 @@ sha512sum /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg
 apt update -y && apt full-upgrade -y
 apt install proxmox-ve postfix open-iscsi -y
 bash <(curl -s https://raw.githubusercontent.com/Tontonjo/proxmox_toolbox/main/proxmox_toolbox.sh)
-1
-y
-2
-y
-3
-y
-4
-y
-n
-0
 clear
 read -p "- Do you want to install the Dark theme?[Y/N]" -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]; then
