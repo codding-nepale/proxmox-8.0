@@ -1,7 +1,10 @@
-ip=ip4=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)
+#!/bin/sh
+
+. /etc/update-motd.d/quiet
+. /etc/update-motd.d/colors
 
 ------------------------------------------------------------------------------
-Welcome to the Proxmox Virtual Environment. Please use your web browser to 
+Welcome to the Proxmox Virtual Environment by 𝐶𝛳𝐷𝐼𝛱𝐺'𝛱𝛴𝑃𝛥𝐿𝛴. Please use your web browser to 
 configure this server - connect to:
 https://ip:8006/
 ------------------------------------------------------------------------------
