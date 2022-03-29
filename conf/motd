@@ -5,7 +5,7 @@
 ip=$(/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}')
 
 ------------------------------------------------------------------------------
-Welcome to the Proxmox Virtual Environment by 𝐶𝛳𝐷𝐼𝛱𝐺'𝛱𝛴𝑃𝛥𝐿𝛴. Please use your web browser to 
+Welcome to the Proxmox Virtual Environment by 𝐶𝛳𝐷𝐼𝛱𝐺\'𝛱𝛴𝑃𝛥𝐿𝛴. Please use your web browser to 
 configure this server - connect to:
 https://$ip:8006/
 ------------------------------------------------------------------------------
