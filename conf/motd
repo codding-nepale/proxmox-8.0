@@ -1,0 +1,7 @@
+ip=ip4=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)
+
+------------------------------------------------------------------------------
+Welcome to the Proxmox Virtual Environment. Please use your web browser to 
+configure this server - connect to:
+https://ip:8006/
+------------------------------------------------------------------------------
