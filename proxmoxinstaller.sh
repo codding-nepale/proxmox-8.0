@@ -4,7 +4,6 @@ wget https://enterprise.proxmox.com/debian/proxmox-release-bullseye.gpg -O /etc/
 sha512sum /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg 
 apt update -y && apt full-upgrade -y
 apt install proxmox-ve postfix open-iscsi -y
-bash <(curl -s https://raw.githubusercontent.com/Tontonjo/proxmox_toolbox/main/proxmox_toolbox.sh)
 clear
 echo "installation of the theme in progress..."
 bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
