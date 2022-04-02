@@ -10,15 +10,10 @@ read -p "- Do you want to install the Dark theme?[Y/N]" $REPLY
 if [[ $REPLY =~ ^[Yy]$ ]]; then
       echo "installation of the theme in progress..."
       bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
-      echo "install theme end with success"
       clear
-      echo "installation of the latest packages in progress"
-      rm -rf /etc/motd && wget https://raw.githubusercontent.com/legendarme/proxmox-7.1/main/conf/motd -O /etc/motd 
-      echo "A mandatory restart will be carried out"
+      echo "install theme end with success and a mandatory restart will be carried out"
       reboot now
  else if [[ $REPLY =~ ^[Nn]$ ]]; then
-            echo "installation of the latest packages in progress"
-            rm -rf /etc/motd && wget https://raw.githubusercontent.com/legendarme/proxmox-7.1/main/conf/motd -O /etc/motd
             echo "A mandatory restart will be carried out"
             reboot now
 fi
