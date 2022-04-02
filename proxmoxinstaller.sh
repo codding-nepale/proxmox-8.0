@@ -6,7 +6,7 @@ apt update -y && apt full-upgrade -y
 apt install proxmox-ve postfix open-iscsi -y
 bash <(curl -s https://raw.githubusercontent.com/Tontonjo/proxmox_toolbox/main/proxmox_toolbox.sh)
 clear
-read -p "- Do you want to install the Dark theme?[Y/N]" -n 1 -r
+read -p "- Do you want to install the Dark theme?[Y/N]" $REPLY
 if [[ $REPLY =~ ^[Yy]$ ]]; then
       echo "installation of the theme in progress..."
       bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
