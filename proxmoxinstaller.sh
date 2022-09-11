@@ -9,4 +9,3 @@ echo "installation of the theme in progress..."
 bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
 clear
 echo "install theme end with success and a mandatory restart will be carried out"
-reboot now
