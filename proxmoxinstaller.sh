@@ -11,4 +11,3 @@ bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/
 clear
 echo "install theme end with success and a mandatory restart will be carried out"
 systemctl reboot
-=
