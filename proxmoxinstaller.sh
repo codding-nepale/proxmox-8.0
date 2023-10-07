@@ -8,9 +8,5 @@ apt update -y && apt full-upgrade -y
 apt install pve-kernel-5.15 -y
 apt install proxmox-ve postfix open-iscsi -y
 clear
-#cf. https://github.com/Weilbyte/PVEDiscordDark#readme
-echo "installation of the theme in progress..."
-bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
-clear
 echo "install theme end with success and a mandatory restart will be carried out"
 systemctl reboot
